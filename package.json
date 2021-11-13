@@ -1,0 +1,17 @@
+{
+    "name": "avaliacao-final",
+    "version": "1.0.0",
+    "description": "",
+    "main": "ClasseSistemaRecados.js",
+    "dependencies": {
+        "jsdom": "^17.0.0",
+        "localStorage": "^1.0.4",
+        "node-localstorage": "^2.2.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "node teste.js"
+    },
+    "author": "",
+    "license": "ISC"
+}

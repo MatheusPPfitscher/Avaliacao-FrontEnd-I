@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Acesso ao Sistema de Recados</title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <main class="d-flex flex-row align-items-center border border-dark border-3">
+        <div id=" Imagem">
+            <img src=" https://1porcentomelhortododia.com.br/wp-content/uploads/2018/04/walk-2985198_1280-445x445.jpg"
+                alt="" srcset="" class="">
+        </div>
+        <div class="d-flex flex-column align-items-center mx-3">
+            <h3>ENTRAR NO SISTEMA DE RECADOS</h3>
+            <form class="d-flex mt-2 my-3 w-100" id="formEntrada">
+                <div class="w-50">
+                    <input type="text" id="campoUsuario" class="form-control" placeholder="User name">
+                </div>
+                <div class="w-50">
+                    <input type="password" id="campoSenha" class="form-control" placeholder="Password">
+                </div>
+            </form>
+            <p class="text-danger" id="alertaUsuarioSenha"></p>
+            <button type="button" class="btn btn-success w-100"
+                onclick="sistemaRecados.tentarFazerLogon()">ENTRAR</button>
+            <a href="./cadastrar.html" class="link-success mt-2">CRIAR CONTA</a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./sistemaRecados.js"></script>
+</body>
+
+</html>

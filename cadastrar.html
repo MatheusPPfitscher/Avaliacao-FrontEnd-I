@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Cadastro de usuários ao Sistema de Recados</title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <main class="d-flex flex-row align-items-end border border-dark border-3">
+        <img src=" https://1porcentomelhortododia.com.br/wp-content/uploads/2018/04/walk-2985198_1280-445x445.jpg"
+            class="">
+        <div class="d-flex flex-column align-items-center  mx-5 my-3">
+            <h3>CRIAR CONTA</h3>
+            <form class="d-flex flex-column">
+                <input type="text" id="campoUsuario" class="form-control" placeholder="User name">
+                <p class="text-danger" id="alertaUsuario"></p>
+                <input type="password" id="campoSenha" class="form-control" placeholder="Password">
+                <input type="password" id="campoRepeteSenha" class="form-control" placeholder="Repeat Password">
+                <p class="text-danger" id="alertaSenha"></p>
+            </form>
+
+            <button type="button" class="btn btn-success my-2 w-100"
+                onclick="sistemaRecados.tentaCriarContaUsuario()">Criar conta agora</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./sistemaRecados.js"></script>
+</body>
+
+</html>
